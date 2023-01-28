@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+
+*{
+  margin: 0 !important;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.iconos {
+  width: 300px;
+  position: relative;
+  left: 33%;
+  top: 10%;
+  align-items: center;
+  
+}
+.subtext, .sub-ul {
+  color: rgb(100, 100, 100);
+}
+
+#imgPerfil {
+  border-radius: 50%;
+  height: 200px;
+}
+
+ul.myUL {
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+}
+
+.sub-ul {
+  list-style: none;
+}
+
+/*===================MENU==========================*/
+#menu a, button {
+  font-size: 18px !important;
+  font-weight: 600;
+ 
+}
+#menu a {
+  color:#3f3f3f;
+}
+
+/*=========================SECCION CONTACTO================================*/
+
+#seccion-contacto{
+  background-color: #1b2a4e;
+  min-height:500px;
+  position:relative;
+}
+
+#contenedor-formulario{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  background: #fbfafa;
+  border-radius:5px;
+  
+} 
+
+#message{
+  resize: none;
+}
+
+
+/*=========================FOOTER================================*/
+
+footer {
+  background: #1b2a4e;
+  min-height: 100px;
+}
+footer p{
+  color:#f3f3f3;
+  text-align:center;
+}
+#iconos a {
+  font-size: 26px;
+  padding: 0 8px;
+  color:white;
+}
+
+
+/*=========================SCROLL UP BUTTON================================*/
+#myBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: rgb(136, 136, 136); 
+  color: white; 
+  cursor: pointer;
+  padding: 15px; 
+  border-radius: 10px; 
+  font-size: 18px;
+}
+
+#myBtn:hover {
+  background-color: #555; 
+}
+
+
+/*=========================MEDIA QUERIES PANTALLA MOVIL================================*/
+
+@media screen and (max-width: 576px){
+  #seccion-datosPersonales div{
+    left: 12%;
+    padding: 10px;
+  }
+  .seccion {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+  }
+  div p {
+    padding: 8px !important;
+  }
+  li {
+    font-size: 21.525px !important;
+  }
+  .sub-ul li{
+    font-size: 18px !important;
+  }
+  li p {
+    font-size: 18px !important;
+  }
+  .titulo {
+    font-size: 20px !important;
+  }
+}
